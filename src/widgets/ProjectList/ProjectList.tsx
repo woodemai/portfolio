@@ -1,13 +1,6 @@
 import Project from "@/entities/project"
+import { IProject } from "@/entities/project/types"
 import { Car, GraduationCap } from "lucide-react"
-import { ReactNode } from "react"
-
-interface IProject {
-    title: string,
-    description: string,
-    url: string,
-    image?: ReactNode | string,
-}
 
 const projects:IProject[] = [
     {
