@@ -17,7 +17,7 @@ export default function RootLayout() {
                     unmountOnExit
                 >
                     {() => (
-                        <div >
+                        <div className='mt-20' >
                             {currentOutlet}
                         </div>
                     )}

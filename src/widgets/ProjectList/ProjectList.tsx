@@ -24,7 +24,7 @@ const projects:IProject[] = [
 
 const ProjectList = () => {
     return (
-        <div className="flex flex-col gap-y-4 items-center justify-center w-full sm:max-w-md">
+        <div className="flex flex-col gap-y-4 justify-center w-full">
             <h2 className="text-left">My projects</h2>
             {projects.map(project => <Project key={project.title} {...project}/>)}
         </div>
