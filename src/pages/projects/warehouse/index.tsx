@@ -1,7 +1,6 @@
 import { IProject } from "@/entities/project/types"
 import ImageDialog from "@/features/ImageDialog"
 import ProjectPageTemplate from "@/features/ProjectPageTemplate"
-import LinkBack from "@/shared/components/ui/link-back"
 
 const project: IProject = {
     title: "Warehouse",
