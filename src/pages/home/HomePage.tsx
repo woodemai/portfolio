@@ -1,7 +1,9 @@
+import ProjectList from "@/widgets/ProjectList/ProjectList";
+
 export default function HomePage() {
     return (
-        <>
-            home page
-        </>
+        <div className="flex flex-col jusitfy-start items-center w-full h-full min-h-screen">
+            <ProjectList/>
+        </div>
     )
 }

@@ -1,11 +1,11 @@
 import { PageProvider } from "./providers/PageProvider"
-import StoreProvider from "./providers/StoreProvider/StoreProvider"
+import { ThemeProvider } from "./providers/ThemeProvider/theme-provider"
 
 function App() {
   return (
-    <StoreProvider>
-      <PageProvider />
-    </StoreProvider>
+      <ThemeProvider>
+        <PageProvider />
+      </ThemeProvider>
   )
 }
 
