@@ -15,7 +15,7 @@ const ProjectPageTemplate: FC<Props> = ({
     url
 }) => {
     return (
-        <div className="flex justify-center items-center h-screen w-full">
+        <div className="flex justify-center items-center h-full mb-2 w-full">
             <div className="rounded-md shadow-md w-full sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-3xl bg-card p-4 pt-2 flex flex-col items-end">
                 <LinkBack />
                 <div className="flex flex-col gap-y-4 items-start w-full">
