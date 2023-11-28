@@ -16,13 +16,13 @@ const projects:IProject[] = [
         url: "https://github.com/woodemai/warehouse"
     },
     {
-        title: "New education",
+        title: "New-education",
         description: "This is an educational site. Building with Next.js. Using server side rendering and prisma orm. Next auth for authentication.",
         url: "https://github.com/woodemai/new_education_nextjs13",
         image: <GraduationCap width={96} height={96}/>
     },
     {
-        title: "Garage sale",
+        title: "Garage-sale",
         description: "This is a site for selling stuff that you don't want to keep anymore. Building with Next.js. Using server side rendering and prisma orm. Next auth for authentication.",
         url: "https://github.com/woodemai/garageSale",
         image: <Car width={96} height={96}/>

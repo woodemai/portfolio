@@ -1,5 +1,6 @@
 import { FC, ReactNode } from "react"
 import ProjectImage from "./components/ProjectImage"
+import { Link } from "react-router-dom"
 
 type Props = {
   title: string
@@ -16,7 +17,8 @@ const Project: FC<Props> = ({
 }) => {
 
   return (
-    <div className="bg-card flex flex-row  justify-between items-center p-4 rounded-lg shadow-md w-full min-h-[100px]">
+    <Link to={`/${title.toLowerCase()}`}>
+    <div className="hover:scale-105  transition-all durantion-300 bg-card flex flex-row  justify-between items-center p-4 rounded-lg shadow-md w-full min-h-[100px]">
       <div className="flex flex-col gap-y-2">
         <a target="_blank" href={url} className="underline  cursor-pointer"><h3>{title}</h3></a>
         <p className="text-lignt"> {description}</p>
@@ -25,6 +27,7 @@ const Project: FC<Props> = ({
         <ProjectImage image={image} />
       </div>
     </div>
+    </Link>
   )
 }
 
