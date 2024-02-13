@@ -2,6 +2,7 @@ import { CSSTransition, SwitchTransition } from 'react-transition-group'
 import { Toaster } from "@/shared/components/ui/toaster";
 import Header from "./Header";
 import { useLocation, useOutlet } from 'react-router-dom';
+import Footer from './Footer';
 export default function RootLayout() {
     const location = useLocation()
     const currentOutlet = useOutlet()
@@ -23,6 +24,7 @@ export default function RootLayout() {
                     )}
                 </CSSTransition>
             </SwitchTransition>
+            <Footer/>
         </>
     )
 }

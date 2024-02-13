@@ -9,10 +9,10 @@ const ImageDialog: FC<Props> = ({ image }) => {
     return (
         <Dialog>
             <DialogTrigger asChild className='cursor-pointer'>
-                <img src={image} alt='image' width={300} />
+                <img src={image} alt='screenshot' width={300} />
             </DialogTrigger>
             <DialogContent className='p-0 w-full'>
-                <img src={image} alt='image' className='w-full max-h-screen'/>
+                <img src={image} alt='screenshot full-screen' className='w-full max-h-screen' />
             </DialogContent>
         </Dialog>
     )
