@@ -17,10 +17,17 @@ export const Component = () => {
         }
     }, [loaderData])
 
+
     const getTitle = useMemo(() => {
         return convertText(project?.title ?? "")
     }, [project?.title])
 
+    useEffect(() => {
+        if (project?.title) {
+            document.title = `Проект ${getTitle}`
+
+        }
+    }, [getTitle, project?.title])
 
     if (project) {
 

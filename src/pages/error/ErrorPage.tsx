@@ -1,10 +1,15 @@
 import { Button } from "@/shared/components/ui/button";
+import { useEffect } from "react";
 import { Link, useRouteError } from "react-router-dom";
 
 
 
 const ErrorPage = () => {
     const error = useRouteError() as { statusText?: string, message: string };
+
+    useEffect(() => {
+        document.title = `Ошибка!`
+    }, [])
 
     return (
         <div className="flex justify-center items-center flex-col gap-4 h-screen">
