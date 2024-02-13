@@ -1,9 +1,6 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Params, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./RootLayout";
 import HomePage from "@/pages/home/HomePage";
-import WarehousePage from "@/pages/projects/warehouse";
-import EducationPage from "@/pages/projects/education";
-import GaragePage from "@/pages/projects/garageSale";
 import { createRef } from "react";
 
 export const routes = [
@@ -14,22 +11,12 @@ export const routes = [
         nodeRef: createRef()
     },
     {
-        path: '/warehouse',
-        name: "Warehouse",
-        element: <WarehousePage />,
-        nodeRef: createRef()
-    },
-    {
-        path: '/new-education',
-        name: "New education",
-        element: <EducationPage />,
-        nodeRef: createRef()
-    },
-    {
-        path: '/garage-sale',
-        name: "Garage sale",
-        element: <GaragePage />,
-        nodeRef: createRef()
+        path: '/project/:title',
+        nodeRef: createRef(),
+        async loader({ params }: { params: Params }) {
+            return (await import('@/pages/projects/loader')).loader({ params });
+        },
+        lazy: () => import("@/pages/projects/component")
     },
 ]
 const router = createBrowserRouter([
@@ -38,7 +25,9 @@ const router = createBrowserRouter([
         children: routes.map(route => ({
             index: route.path === '/',
             path: route.path === '/' ? undefined : route.path,
-            element: route.element
+            element: route.element ?? undefined,
+            loader: route.loader ?? undefined,
+            lazy: route.lazy ?? undefined
         }))
     }
 ])
