@@ -1,4 +1,3 @@
-import { Button } from "@/shared/components/ui/button"
 import PreviewLink from "./PreviewLink"
 
 const Preview = () => {
