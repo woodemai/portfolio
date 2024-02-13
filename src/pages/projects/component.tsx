@@ -51,10 +51,11 @@ export const Component = () => {
         )
     } else {
         return (
-            <div>
-                <h1>Не найдено</h1>
-                <LinkBack />
-
+            <div className="w-full flex justify-center items-center my-80">
+                <div className="bg-card p-4 rounded-md shadow-md flex flex-col justify-center items-center gap-y-4">
+                    <h3>Проект не найден</h3>
+                    <LinkBack withText />
+                </div>
             </div>
         )
     }
