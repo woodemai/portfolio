@@ -4,10 +4,12 @@ import { projects } from "@/entities/project/data/projects"
 
 const ProjectList = () => {
     return (
-        <ul className="flex flex-col gap-y-4 justify-center w-full">
-            <h2 className="text-left">My projects</h2>
-            {projects.map(project => <ProjectItem key={project.title} {...project} />)}
-        </ul>
+        <section>
+            <h2 className="mb-4">Проекты</h2>
+            <ul className="flex flex-col gap-y-4 justify-center w-full">
+                {projects.map(project => <ProjectItem key={project.title} {...project} />)}
+            </ul>
+        </section>
     )
 }
 

@@ -2,13 +2,14 @@ import { Params, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./RootLayout";
 import HomePage from "@/pages/home/HomePage";
 import { createRef } from "react";
+import ErrorPage from "@/pages/error/ErrorPage";
 
 export const routes = [
     {
         path: "/",
         name: "Home",
         element: <HomePage />,
-        nodeRef: createRef()
+        nodeRef: createRef(),
     },
     {
         path: '/project/:title',
@@ -22,6 +23,7 @@ export const routes = [
 const router = createBrowserRouter([
     {
         element: <RootLayout />,
+        errorElement: <ErrorPage />,
         children: routes.map(route => ({
             index: route.path === '/',
             path: route.path === '/' ? undefined : route.path,

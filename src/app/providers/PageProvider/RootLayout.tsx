@@ -7,7 +7,7 @@ export default function RootLayout() {
     const location = useLocation()
     const currentOutlet = useOutlet()
     return (
-        <>
+        <main className=' bg-gradient-to-r from-sky-50 dark:from-sky-950 to-gray-100 dark:to-blue-950'>
             <Header />
             <Toaster />
             <SwitchTransition>
@@ -18,13 +18,13 @@ export default function RootLayout() {
                     unmountOnExit
                 >
                     {() => (
-                        <div className='mt-24' >
+                        <div className='mt-4'>
                             {currentOutlet}
                         </div>
                     )}
                 </CSSTransition>
             </SwitchTransition>
-            <Footer/>
-        </>
+            <Footer />
+        </main>
     )
 }
