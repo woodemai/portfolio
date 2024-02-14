@@ -18,11 +18,11 @@ const Preview = () => {
                     </p>
                 </div>
                 <div>
-                    <h3 className="mb-4">Контактная информация 🤙🏻</h3>
+                    <h3 className="mb-4">Связаться со мной 🤙🏻</h3>
                     <div className="flex justify-between gap-x-4">
-                        <PreviewLink href="https://t.me/woodemai" label='Телеграм' />
-                        <PreviewLink href="https://vk.com/woodemai" label='ВК' />
-                        <PreviewLink href="https://github.com/woodemai" label='GitHub' />
+                        <PreviewLink href="https://t.me/woodemai" imageSrc="/icons/telegram-logo.svg">Телеграм</PreviewLink>
+                        <PreviewLink href="https://vk.com/woodemai" imageSrc="/icons/vk-logo.svg" >ВК</PreviewLink>
+                        <PreviewLink href="https://github.com/woodemai" imageSrc="/icons/github-logo.svg">GitHub</PreviewLink>
                     </div>
                 </div>
             </div>

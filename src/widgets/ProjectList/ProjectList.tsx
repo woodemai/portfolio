@@ -1,6 +1,4 @@
-import { ProjectItem } from "@/entities/project"
-import { projects } from "@/entities/project/data/projects"
-
+import { ProjectItem, projects } from "@/entities/project"
 
 const ProjectList = () => {
     return (

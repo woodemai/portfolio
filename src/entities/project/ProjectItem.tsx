@@ -1,19 +1,16 @@
-import { FC, ReactNode, useMemo } from "react"
+import { FC, useMemo } from "react"
 import { Link } from "react-router-dom"
 import { translit } from "./utils/translit"
-import { Logo } from "../../features/project/Logo"
 import { convertText } from "./utils/convertText"
 
 type Props = {
   title: string
   description: string
-  image?: string | ReactNode,
 }
 
 export const ProjectItem: FC<Props> = ({
   title,
   description,
-  image,
 }) => {
 
   const getTitle = useMemo(() => {
@@ -22,14 +19,9 @@ export const ProjectItem: FC<Props> = ({
 
   return (
     <li>
-      <Link to={`/project/${translit(title)}`}>
-        <div className="hover:scale-105  transition-all duration-300 bg-card flex flex-col sm:flex-row  justify-between items-center p-4 rounded-lg shadow-md w-full min-h-[100px]">
-          <div className="flex flex-col gap-y-2">
-            <h3>{getTitle}</h3>
-            <p className="text-light"> {description}</p>
-          </div>
-          <Logo image={image} />
-        </div>
+      <Link to={`/project/${translit(title)}`} className="hover:scale-105 transition-all duration-200 bg-gradient-to-bl from-lime-100 to-green-100 dark:from-sky-900 dark:to-blue-900 flex flex-col p-4 rounded-md shadow-md">
+        <h3>{getTitle}</h3>
+        <p className="text-light"> {description}</p>
       </Link>
     </li>
   )

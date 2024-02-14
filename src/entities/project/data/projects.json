@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Склад",
+    "description": "Это фул-стек проект клиентская часть которого написана на React, а серверная часть на Spring Boot. Также в проекте используется авторизация с JWT токенами, TypeScript, взаимодействие с API с помощью axios.",
+    "repositoryURL": "https://github.com/woodemai/warehouse",
+    "screenshots": [
+      "/warehouse/loginPage.png",
+      "/warehouse/itemsPage.png",
+      "/warehouse/profilePage.png"
+    ],
+    "usedLibraries": [
+      "React - библиотека для создания пользовательских интерфейсов",
+      "Spring Boot - фреймворк на Java на котором написан бэкенд",
+      "axios - библиотека для отправки HTTP запросов"
+    ]
+  },
+  {
+    "title": "new education",
+    "description": "Образовательый веб-сайт с курсами. SSR приложение на Next.js с prisma ORM. Используется Next Auth для аунтефикации. Пытался разбираться с Next.js. Концепция мне очень зашла, но сайт конечно очень сырой. Также реализовал смену языков (русский/английский). Язык выбирается автоматически из настроек браузера.",
+    "repositoryURL": "https://github.com/woodemai/new_education_nextjs13",
+    "screenshots": [
+      "/new-education/courses-page.png",
+      "/new-education/english-version.png",
+      "/new-education/home-page.png",
+      "/new-education/reviews-page.png",
+      "/new-education/profile-page.png"
+    ],
+    "usedLibraries": []
+  },
+  {
+    "title": "garage sale",
+    "description": "This is a site for selling stuff that you don't want to keep anymore. Building with Next.js. Using server side rendering and prisma orm. Next auth for authentication.",
+    "repositoryURL": "https://github.com/woodemai/garageSale",
+    "screenshots": [],
+    "usedLibraries": []
+  },
+  {
+    "title": "преферанс",
+    "description": "Онлайн карточная игра \"Преферанс\". Взаимодейсвтие сервера и клиента реализовано с помощью RTK Query для REST API и с помощью Socket.io во время игровового процесса для быстрых изменений в игре.",
+    "repositoryURL": "https://github.com/woodemai/garageSale",
+    "screenshots": [
+      "/preferans/game-in-progress.png",
+      "/preferans/game-table.png",
+      "/preferans/trading-screen.png"
+    ],
+    "usedLibraries": [
+      "React - библиотека для создания пользовательских интерфейсов",
+      "Redux Toolkit, RTK Query - стейт менеджер и дополнения к нему для удобных запросов к API",
+      "Socket.io - Библиотека для быстрого обмена информации с серверов, использует лонг пуллинг и веб сокеты"
+    ]
+  }
+]
