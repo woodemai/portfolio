@@ -23,11 +23,8 @@ export const Component = () => {
     }, [project?.title])
 
     useEffect(() => {
-        if (project?.title) {
-            document.title = `Проект ${getTitle}`
-
-        }
-    }, [getTitle, project?.title])
+        document.title = `Проект ${getTitle}`
+    }, [getTitle])
 
     if (project) {
 

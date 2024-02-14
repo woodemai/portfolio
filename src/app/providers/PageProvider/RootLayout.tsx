@@ -7,7 +7,7 @@ export default function RootLayout() {
     const location = useLocation()
     const currentOutlet = useOutlet()
     return (
-        <main className=' bg-gradient-to-r from-sky-50 dark:from-sky-950 to-gray-100 dark:to-blue-950'>
+        <main className=' bg-gradient-to-bl from-sky-100 dark:from-sky-950 to-teal-100 dark:to-blue-950'>
             <Header />
             <Toaster />
             <SwitchTransition>
