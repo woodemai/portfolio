@@ -1,4 +1,4 @@
-import { FC, ReactNode, useMemo } from "react"
+import { FC, useMemo } from "react"
 import { Link } from "react-router-dom"
 import { translit } from "./utils/translit"
 import { convertText } from "./utils/convertText"

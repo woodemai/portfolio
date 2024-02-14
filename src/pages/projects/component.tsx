@@ -4,7 +4,7 @@ import ImageDialog from "@/features/ImageDialog";
 import { Button } from "@/shared/components/ui/button";
 import LinkBack from "@/shared/components/ui/link-back";
 import { ArrowUp, Github } from "lucide-react";
-import { MutableRefObject, useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 
 export const Component = () => {
